@@ -1,0 +1,428 @@
+
+@font-face {
+    font-family: 'Saira';
+    src: url(../fonts/Saira-VariableFont_wdth,wght.ttf);
+}
+@font-face {
+    font-family: 'Saira Stencil One';
+    src: url(../fonts/SairaStencilOne-Regular.ttf);
+}
+
+body {
+    background: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #E985AD;
+    color: black;
+    height: 50px;
+}
+
+.logo {
+    display: block;
+    width: 160px;
+    height: 100px;
+    position: relative;
+    left: 0px;
+    top: 29px;
+}
+
+.logo img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+    font-family: "Saira Stencil One", sans-serif;
+}
+
+.hero-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.90)), url(../images/hero.jpg), linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.0)), no-repeat;
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.hero-section h1 {
+    color: white;
+    font-family: "Saira Stencil One";
+    font-size: 3rem;
+    font-weight:800;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 90px;
+ }
+
+
+.hero-section p {
+    font-family: "Saira";
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.tagline {
+        color: #E985AD;
+        font-family: "Saira";
+        font-weight: 250;
+        font-size: 27px;
+        margin-bottom: 35rem; 
+        position: relative;
+    top: 90px;
+}
+
+
+.cta-button {
+    background: grey;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-bottom: 3rem;
+    font-family: "Saira";
+    position: relative;
+    top: 90px;
+}
+
+.cta-button :not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.cta-button:hover {
+  background-color: #2F2F2F;
+}
+
+.headliners {
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    text-align: center;
+    padding: 2rem;
+    font-size: 40px;
+    font-family: "Saira Stencil One";
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.feature {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: Saira;
+}
+
+.tickets {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+}
+
+.btn-group {
+    margin-top: 50px;
+}
+
+.btn-group button {
+  background-color: #E985AD; /* Green background */
+  border: 1px solid black; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 70%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  lex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    text-align: left;
+    font-size: 25px;
+    font-family: Saira;
+    font-weight: 550;
+    top: 30px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #D15687;
+}
+
+
+.ticket-buttons {
+    color: white;
+    font-size: 40px;
+    font-family: "Saira Stencil One";
+    height: 2vh;
+    text-align: center;
+}
+
+* {box-sizing: border-box}
+body {margin:0
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+    border: #0a3f54 5px solid;
+    max-width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.prev, .next {
+    border-radius: 0 3px 3px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -22px;
+    padding: 16px;
+    position: absolute;
+    transition: 0.6s ease;
+    top: 60%;
+    user-select: none;
+    width: auto;
+}
+
+.next {
+  border-radius: 3px 0 0 3px;
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 8px;
+  color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+  font-size: .7rem;
+  padding: 8px 2px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+  font-size: 8px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+  width: 15px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+
+}
+@media only screen and (max-width: 800px) {
+  .prev, .next,.text {font-size: 11px}
+
+  .slideshow-container {
+    border: #0a3f54 5px solid;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    }
+
+}
+
+.wrapper-1 {
+  color: white;
+  float: left;
+  padding: 1px 20px;
+  font-family: "Saira";
+  margin-left: 100px;
+
+}
+
+.wrapper-2 {
+  color: white;
+  float: left;
+  padding: 1px 20px;
+  font-family: "Saira";
+}
+
+.wrapper-3 {
+  color: white;
+  float: left;
+  padding: 1px 20px;
+  font-family: "Saira";
+  margin-bottom: 100px;
+}
+
+.wrapper-4 {
+  color: white;
+  float: right;
+  padding: 1px 200px;
+  font-family: "Saira";
+  margin-bottom: 100px;
+  margin: auto;
+  height: 2vh;
+  display: block;
+
+}
+
+.splide {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    margin-top: 175px;
+    top: -135px;
+}
+
+.splide__slide {
+    color: white;
+}
+
+.btn-footer {
+margin-top: 30px;
+
+}
+
+.btn-footer button {
+background-color: #E985AD;
+border: 1px solid black; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 120%; /* Set a width if needed */
+
+}
+
+.slideshow {
+     color: white;
+    font-size: 40px;
+    font-family: "Saira Stencil One";
+    top: 10px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.btn-headliner1 button {
+position: relative;
+top: 15px;
+background-color: #E985AD;
+border: 1px solid #E985AD; /* Green border */
+  color: black; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 25%; /* Set a width if needed */
+    height: 4vh;
+    font-size: 12px;
+    font-family: "Saira";
+    margin-bottom: 10px;
+}
+
+.btn-headliner2 button {
+position: relative;
+top: 15px;
+background-color: #E985AD;
+border: 1px solid #E985AD; /* Green border */
+  color: black; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 25%; /* Set a width if needed */
+    height: 4vh;
+    font-size: 12px;
+    font-family: "Saira";
+    margin-bottom: 10px;
+}
+
+.btn-headliner3 button {
+    position: relative;
+    top: 15px;
+    background-color: #E985AD;
+    border: 1px solid #E985AD; /* Green border */
+    color: black; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 25%; /* Set a width if needed */
+    height: 4vh;
+    font-size: 12px;
+    font-family: "Saira";
+    margin-bottom: 10px;
+}
+
+.footer {
+    width: 100vw;
+    height: 200px;
+    position: relative;
+}
+
+.footer-content {
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  clear: both;
+  font-family: "Saira Stencil One";
+  font-size: 20px;
+}
+
+
+

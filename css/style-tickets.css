@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Saira';
+    src: url(../fonts/Saira-VariableFont_wdth,wght.ttf);
+}
+@font-face {
+    font-family: 'Saira Stencil One';
+    src: url(../fonts/SairaStencilOne-Regular.ttf);
+}
+
+body {
+    background: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #E985AD;
+    color: black;
+    height: 18px;
+}
+
+.logo {
+    display: block;
+    width: 160px;
+    height: 100px;
+    position: relative;
+    left: 0px;
+    top: 29px;
+}
+
+.logo img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+    font-family: "Saira Stencil One", sans-serif;
+}
+
+.hero-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.90)), url(../images/hero2.jpg) no-repeat;
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.hero-section h1 {
+    color: white;
+    font-family: "Saira Stencil One";
+    font-size: 4rem;
+    font-weight:800;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 90px;
+ }
+
+
+.hero-section p {
+    font-family: "Saira";
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+.tagline {
+        color: #E985AD;
+        font-family: "Saira";
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 35rem; 
+        position: relative;
+    top: 90px;
+}
+
+
+.cta-button {
+    background: grey;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-bottom: 3rem;
+    font-family: "Saira";
+    position: relative;
+    top: 100px;
+}
+
+.cta-button :not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.cta-button:hover {
+  background-color: #2F2F2F;
+}
+
+
+.tickets {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 200px;
+    top: 200px;
+}
+
+.btn-group {
+    margin-top: 50px;
+}
+
+.btn-group button {
+  background-color: #E985AD; /* Green background */
+  border: 1px solid black; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 70%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  lex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    text-align: left;
+    font-size: 25px;
+    font-family: Saira;
+    font-weight: 550;
+    top: 30px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #D15687;
+}
+
+.ticket-buttons {
+    color: white;
+    font-size: 40px;
+    font-family: "Saira Stencil One";
+    height: 2vh;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.btn-footer {
+margin-top: 30px;
+
+}
+
+.footer {
+    position: relative;
+    
+}
+.wrapper-1 {
+  color: white;
+  float: left;
+  padding: 1px 20px;
+  font-family: "Saira";
+  margin-left: 100px;
+
+}
+
+.wrapper-2 {
+  color: white;
+  float: left;
+  padding: 1px 20px;
+  font-family: "Saira";
+}
+
+.wrapper-3 {
+  color: white;
+  float: left;
+  padding: 1px 20px;
+  font-family: "Saira";
+  margin-bottom: 100px;
+}
+
+.wrapper-4 {
+  color: white;
+  float: right;
+  padding: 1px 200px;
+  font-family: "Saira";
+  margin-bottom: 100px;
+  margin: auto;
+  height: 2vh;
+  display: block;
+
+}
+
+.footer-content {
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+  clear: both;
+  font-family: "Saira Stencil One";
+  font-size: 20px;
+}
+
+.btn-footer {
+margin-top: 30px;
+
+}
+
+.btn-footer button {
+background-color: #E985AD;
+border: 1px solid black; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 120%; /* Set a width if needed */
+
+}
+
+.btn-help button {
+  background-color: grey; /* Green background */
+  border: 1px solid black; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 20%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  lex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    text-align: center;
+    font-size: 20px;
+    font-family: Saira;
+    font-weight: 550;
+    top: 30px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.help-center {
+    color: white;
+    font-family: 'Saira';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
